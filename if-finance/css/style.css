@@ -76,6 +76,7 @@ body > main{
 	display: flex;
 	gap: 16px;
 	flex-wrap: wrap;
+
 }
 
 body > footer{
@@ -93,6 +94,7 @@ body > footer{
 	border-radius: 20px;
 	padding: 16px;
 	align-self: baseline;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 
@@ -160,13 +162,20 @@ body > footer{
 }
 
 table {
-	border-collapse: collapse;
+	border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #22223b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
 }
 
 th, td{
-	border: 1px solid #f2e9e4;
+	border: 1px solid #22223b;
 	text-align: left;
 	padding: 8px;
+	border-radius: 0
 }
 
 tr:nth-child(even){
@@ -175,6 +184,8 @@ tr:nth-child(even){
 tr:nth-child(odd){
 	background: #22223b;
 }
+
+
 
 fieldset{
 	width: 400px;
@@ -199,7 +210,7 @@ input[type=text], input[type=email], input[type=password], select, textarea{
 	font-size: 18px;
 	margin: 3px 0 16px 0;
 	border: none;
-	background: #333333;
+	background: #9a8c98;
 	color: #FFF;
 }
 
@@ -223,14 +234,14 @@ input[type=submit]:active, input[type=reset]:active{
 }
 
 #banner {
-	width: 500px;
-	height: 300px;
+	width: 600px;
+	height: 400px;
 	background-color: #333333;
-	background-image: url('../img/bg-stock-market.jpg');
+	background-image: url('../img/one_poster.png');
 	background-size: 200px 200px;
 	background-repeat: no-repeat;
 	background-position: right bottom;
-	background: #333333 url('../img/bg-stock-market.jpg');
+	background: #333333 url('../img/banner.png');
 	background-size: cover;
 }
 
