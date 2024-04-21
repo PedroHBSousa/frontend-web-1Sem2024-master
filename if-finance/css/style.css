@@ -186,12 +186,14 @@ tr:nth-child(odd) {
 }
 
 fieldset {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   display: flex;
   flex-direction: column;
   padding: 30px;
   border-radius: 15px;
   margin: 0 0 30px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 fieldset h5 {
   font-size: 1.1rem;
@@ -218,11 +220,11 @@ textarea {
 
 input[type="submit"],
 input[type="reset"] {
-  border: 1px solid #ac3c00;
+  border: 1px solid #fff;
   color: #fff;
   border-radius: 30px;
   padding: 10px 20px;
-  background: #ac3c00;
+  background: #000;
   font-size: 1.1rem;
   margin: 16px 16px 16px 0;
   cursor: pointer;
@@ -230,7 +232,7 @@ input[type="reset"] {
 
 input[type="submit"]:hover,
 input[type="reset"]:hover {
-  background: #ff5900;
+  background: #2c2724;
 }
 
 input[type="submit"]:active,
@@ -239,8 +241,8 @@ input[type="reset"]:active {
 }
 
 #banner {
-  width: 1456px;
-  height: 819px;
+  width: 710px;
+  height: 432px;
   background-color: transparent;
   background-image: url("../img/banner.png");
   background-size: 200px 200px;
@@ -281,14 +283,12 @@ input[type="reset"]:active {
   .logotipo h1 {
     font-size: 20px;
   }
-
   #banner {
-    width: 768px;
-    height: 432px;
+    width: 525px;
+    height: 600px;
     background-image: url("../img/banner-mobile.png");
   }
 }
-
 
 /* mobile */
 
@@ -328,7 +328,6 @@ input[type="reset"]:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   .card-ticker header h2 {
@@ -395,12 +394,25 @@ input[type="reset"]:active {
     top: 0;
     left: 0;
     border-radius: 20px;
-
   }
   .poster-container {
     position: relative;
     width: 100%;
     height: 200px;
     overflow: hidden;
+  }
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  #banner {
+    width: 442.75px;
+    height: 506px;
+    background-image: url("../img/banner-mobile.png");
   }
 }
